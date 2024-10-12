@@ -1,2 +1,2 @@
 # VGR-V-493
-Product-card
+Product-card for VGR V-493 by Monetka Store
