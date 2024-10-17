@@ -1,0 +1,24 @@
+.hair-section{
+    width: 100%;
+    background-image: url(../images/image7.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &__container{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        width: 45%;
+        flex-direction: column;
+        gap: 15px;
+        color: var(--base-color);
+    
+    }
+
+    &__title{
+        @include text(40px, 500, 1.5);
+    }
+}

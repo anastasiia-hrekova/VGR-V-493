@@ -1,0 +1,68 @@
+.hero-section{
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 140px;
+    background-image: url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__container{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        flex-direction: column;
+        width: 550px;
+        gap: 30px;
+    }
+
+    &__title{
+        @include text(60px,600, 1.5);
+        color: var(--base-color);
+        text-shadow: 2px 2px 4px #767676;
+        
+
+    }
+
+    &__text{
+        @include text(16px,400, 1.5);
+        color: var(--base-color);
+
+    }
+
+    &__button{
+        width: 400px;
+        height: 40px;
+        background:var(--button-color);
+        color: var(--base-color);
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 24px;
+        border: none;
+        box-shadow: 1px 1px 3px #767676;
+
+        &:hover{
+            background: transparent;
+            border: 2px solid  #270694;
+            color: #000;
+        }
+    }
+
+    &__price{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+        gap: 16px;
+
+        &-new{
+            @include text(32px,500, 1.5);
+            color: #000;
+        }
+
+        &-old{
+            @include text(30px,500, 1.5);
+           text-decoration:line-through;
+           color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}

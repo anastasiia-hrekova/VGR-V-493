@@ -1,0 +1,24 @@
+.temp-section{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__container{
+        @include center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title{
+        @include text(40px, 500, 1.5);
+    }
+
+    &__block{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+}

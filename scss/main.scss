@@ -1,0 +1,16 @@
+@import './utils/variables';
+@import './base';
+@import './utils/mixins';
+
+@import './components/container';
+@import './components/form';
+@import './components/gallary';
+
+@import './layouts/conditions-section';
+@import './layouts/form-section';
+@import './layouts/hair-section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/nozzles-section';
+@import './layouts/_reviews';
+@import './layouts/temp-section';

@@ -1,0 +1,35 @@
+.nozzles-section{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    &__container{
+        @include center;
+    }
+
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__image{
+        width: 50%;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border:2px solid rgba(247, 85, 171, 0.8);
+        border-radius: 64px;
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 45%;
+            @include text(16px, 400, 1.5);
+        }
+    }
+}

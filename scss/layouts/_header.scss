@@ -1,0 +1,44 @@
+.header{
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(247, 85, 171,0.3);
+    z-index: 2;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__logo{
+        height: 60px;
+    }
+
+    &__title{
+        color: var(--base-color);
+        @include text(28px,600,1.5);
+        text-shadow: 2px 2px 4px #767676;
+    }
+
+    &__button{
+        width: 200px;
+        height: 40px;
+        background:var(--button-color);
+        color: var(--base-color);
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 24px;
+        border: none;
+        box-shadow: 1px 1px 3px #767676;
+
+        &:hover{
+            background: transparent;
+            border: 2px solid  #270694;
+            color: #000;
+        }
+    }
+
+
+}
